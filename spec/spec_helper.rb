@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "github/notion/changelog"
+require "github_notion_changelog"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
