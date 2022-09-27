@@ -10,3 +10,8 @@ require "rubocop/rake_task"
 RuboCop::RakeTask.new
 
 task default: %i[spec rubocop]
+
+task :run do
+    require_relative "lib/github_notion_changelog.rb"
+    GithubNotionChangelog.create("b")
+end
